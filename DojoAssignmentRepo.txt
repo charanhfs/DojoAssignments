@@ -1,0 +1,39 @@
+Charans-MacBook-Pro:desktop Charan$  cd DojoAssignments
+Charans-MacBook-Pro:DojoAssignments Charan$ ls
+MEAN		Ruby		iOS
+Python		WebFundamentals	netCore
+Charans-MacBook-Pro:DojoAssignments Charan$ clear
+
+Charans-MacBook-Pro:DojoAssignments Charan$ cd ..
+Charans-MacBook-Pro:desktop Charan$  cd DojoAssignments
+Charans-MacBook-Pro:DojoAssignments Charan$ git init
+Initialized empty Git repository in /Users/Charan/Desktop/DojoAssignments/.git/
+Charans-MacBook-Pro:DojoAssignments Charan$ git add .
+Charans-MacBook-Pro:DojoAssignments Charan$ git commit -m "first commit"
+[master (root-commit) 6e0dbbf] first commit
+ 10 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 MEAN/about.txt
+ create mode 100644 Python/about.txt
+ create mode 100644 Ruby/about.txt
+ create mode 100644 WebFundamentals/CSS/about.txt
+ create mode 100644 WebFundamentals/Git/about.txt
+ create mode 100644 WebFundamentals/HTML/about.txt
+ create mode 100644 WebFundamentals/HTML/indentation.html
+ create mode 100644 WebFundamentals/JavaScript/about.txt
+ create mode 100644 iOS/about.txt
+ create mode 100644 netCore/about.txt
+Charans-MacBook-Pro:DojoAssignments Charan$ git remote add origin https://github.com/charanhfs/DojoAssignments.git
+Charans-MacBook-Pro:DojoAssignments Charan$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 479 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/charanhfs/DojoAssignments.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Charans-MacBook-Pro:DojoAssignments Charan$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Charans-MacBook-Pro:DojoAssignments Charan$
