@@ -1,0 +1,126 @@
+* {
+		padding: 0;
+		margin: 0;
+  }
+#container{
+	width: 970px;
+	font-family:"Times New Roman", Times, serif;
+	background-color: #2b5b84;
+}
+#top{
+	color: #e6e8ea;
+	box-shadow:  0px 1px 0px black;
+	padding: 10px 0px 15px 0px;
+}
+header{
+	padding: 0px 0px 0px 5px;
+}
+#imglogo{
+display: inline-block;
+width: 350px;
+height: 100px;
+}
+#header-search{
+display: inline-block;
+vertical-align: top;
+text-align: center;
+margin-left: 360px;
+}
+#header-search span{
+	color: black;
+}
+#header-search a{
+	color: #ffd343;
+}
+#search{
+	background-color: #2f3f4f;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px black;
+	margin-top: 3px;
+}
+input[type = "text"]{
+	  text-align: center;
+		height: 30px;
+		width: 150px;
+}
+button[name = "button"]{
+	background-color: #25527a;
+	color:#e6e8ea;
+	border-radius: 4px;
+	padding: 7px;
+	vertical-align: middle;
+}
+nav{
+	background-color: #3d83be;
+	background: -webkit-linear-gradient(#356fa3, #3d83be, #356fa3);
+	margin: 0px 35px 20px 60px;
+	text-align: center;
+	border-radius: 7px;
+	box-shadow: 1px 1px 1px black;
+}
+nav ul li{
+	display: inline-block;
+  padding: 10px 22px 10px 22px;
+	font-size: 20px;
+}
+#side-nav{
+	text-align: center;
+	display: inline-block;
+	margin: 20px 30px 0px 100px;
+	vertical-align: top;
+}
+#side-nav ul li{
+	list-style-type: none;
+}
+#side-nav a{
+	color:#e6e8ea;
+}
+#main_top{
+  display: inline-block;
+	width: 650px;
+	text-align: center;
+}
+#main_top h3{
+	color: #ffd343;
+	padding: 7px 0px 7px 0px;
+	font-style: italic;
+}
+#middle{
+	background-color: white;
+	color: black;
+	height: 200px;
+	padding: 10px 20px 10px 60px;
+}
+.panel{
+	display: inline-block;
+	width: 370px;
+	border-top: 3px solid #3d83be;
+	vertical-align: top;
+	text-align: center;
+	margin-left: 10px;
+	padding: 10px 40px 0px 15px;
+}
+.panel ul li{
+	list-style-type: square;
+}
+.panel span, a{
+	color: #4494d6;
+	text-decoration: none;
+}
+.panel span{
+	font-size: 14px;
+}
+footer{
+	text-align: center;
+	color: #50a6ed;
+	background: #2b5b84;
+	background: linear-gradient(#2b5b84,#2b5b84,#316796,#4184bf);
+}
+footer ul li{
+	display: inline-block;
+	padding: 40px 30px 10px 30px;
+}
+footer p{
+	font-size: 12px;
+}
