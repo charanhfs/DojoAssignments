@@ -1,0 +1,191 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#container{
+	width: 970px;
+	height: auto;
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+#logo{
+	width: 110px;
+	height: 110px;
+	position: absolute;
+}
+#headtext{
+	display: inline-block;
+	font-size: 48px;
+	color: #474747;
+	margin-left: 115px;
+  margin-top: 30px;
+}
+.span3{
+	color: #22659e;
+}
+#spanred{
+	color: red;
+}
+#container>#www{
+	background-color: #23659e;
+  background: -webkit-linear-gradient(#23659e, #4e80aa, #23659e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#23659e, #4e80aa, #23659e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#23659e, #4e80aa, #23659e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#23659e, #4e80aa, #23659e); /* Standard syntax */
+  color: white;
+  font-size: 30px;
+  padding: 10px 15px;
+}
+#main{
+	background: #e3e3e3; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#e3e3e3, white, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e3e3e3, white, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e3e3e3, white, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e3e3e3, white, white); /* Standard syntax */
+}
+#sidebar{
+	width: 220px;
+	height: auto;
+	padding-top: 20px;
+	display: inline-block;
+}
+#sidebartop{
+	padding-left: 5px;
+	padding-bottom: 10px;
+	border-bottom: 1px #9da3ad solid;
+	text-align: left;
+}
+.sectionbuttons{
+	width: 200px;
+	box-shadow: 1px 1px 1px black;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 10px 10px 10px;
+	margin: 0px 0px 5px 5px;
+	font-size: 15px;
+	border: none;
+}
+#butt1{
+	margin-top: 20px;
+	background: #6398c3; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#6398c3, #22659e); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#6398c3, #22659e); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#6398c3, #22659e); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#6398c3, #22659e);
+}
+#butt2{
+	background: #ebaa53; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ebaa53, #ef7300); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ebaa53, #ef7300); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ebaa53, #ef7300); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ebaa53, #ef7300); /* Standard syntax */
+}
+#backgroundimage{
+	background-image: url("images/ad_background.png");
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	margin: 20px 0px 0px 0px;
+	box-shadow:  2px 2px 2px black;
+	padding-bottom: 30px;
+}
+#imgninja{
+	width: 100px;
+	height: auto;
+	margin-bottom: 20px;
+}
+#backgroundimage>#learnlink{
+  font-size: 15px;
+	background: #79d0df; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#79d0df, #00c1df); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#79d0df, #00c1df); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#79d0df, #00c1df); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#79d0df, #00c1df); /* Standard syntax */
+	margin: 0px 20px 0px 20px;
+	padding: 5px 10px 10px 10px;
+	border-radius: 5px;
+}
+#maincontent{
+	vertical-align: top;
+	display: inline-block;
+	width: 700px;
+	margin: 0px 0px 0px 30px;
+}
+#maincontenttop{
+	border-bottom: 1px #9da3ad solid;
+	padding-bottom: 10px;
+}
+#homelink{
+	vertical-align: top;
+	display: inline-block;
+	padding-top: 5px;
+}
+#imghome{
+	width: 25px;
+	height: 25px;
+}
+#homelink>p{
+	vertical-align: top;
+	display: inline-block;
+	padding-top: 5px;
+	font-size: 15px;
+	color: #22659e;
+}
+#contact{
+	display: inline-block;
+	margin-left: 405px;
+}
+#phonelogo{
+	width: 50px;
+	height: 50px;
+	padding-top: 5px;
+}
+#contact>p{
+	font-size: 12px;
+	display: inline-block;
+}
+#contact>p>span{
+	font-size: 25px;
+	color: #37c4ce;
+}
+#maincontentmid{
+	padding-top: 5px;
+}
+.h3{
+	color: #22659e;
+}
+#maincontentmid ul, ol{
+	margin-left: 50px;
+}
+.spanthiel{
+	color: #2fbac4;
+}
+.spanbold{
+	font-weight: bold;
+}
+#imgclient-server{
+	width: 300px;
+	height: 120px;
+  margin-left: 200px;
+}
+#minifooter{
+	border-top: 5px #1188c4 solid;
+	border-left: 5px #1188c4 solid;
+	border-right: 5px #1188c4 solid;
+	margin-top: 10px;
+	box-shadow: 2px 5px 1px #9a9a9a;
+}
+#imghtml{
+	width: 150px;
+	height: 130px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+}
+#minifootertext{
+	display: inline-block;
+	width: 500px;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
