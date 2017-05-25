@@ -1,0 +1,9 @@
+input[name="comment"]{
+	height: 200px;
+	width: 400px;
+}
+#form{
+	width: 500px;
+	padding-left: 10px;
+	border: 1px solid black;
+}

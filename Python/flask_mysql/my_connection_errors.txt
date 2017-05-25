@@ -1,0 +1,30 @@
+1.
+  The first error created was by changing the port connection from 8889 to 8888
+the terminal froze but it also created a mysqlconnection.pyc file with random code in it.
+	To rectify it, the port was changed back and it pulled the data.
+
+2. The second error created was by not setting a password for the connection and the following
+error was encountered.
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError)
+(1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+
+3. the third error created was by removing the db value for database which produced and invalid syntax error
+SyntaxError: invalid syntax
+(env_flask_mysql) Charans-MacBook-Pro:flask_mysql Charan$ python server.py
+Traceback (most recent call last):
+  File "server.py", line 3, in <module>
+    from mysqlconnection import MySQLConnector
+  File "/Users/Charan/Desktop/DojoAssignments/Python/flask_mysql/mysqlconnection.py", line 10
+    'user': 'root',
+
+4. the host: localhost was commented out but the server file ran without errors and it pulled the data
+
+5. the DATABASE_URI was commented out and a NameError: global name 'DATABASE_URI' is not defined
+error occured.
+
+6. the connection to the database was commented out and this error occured
+result = self.db.session.execute(text(query), data)
+AttributeError: 'MySQLConnection' object has no attribute 'db'
+
+7. lastly, the MySQLConnector function was commented out and this error occured
+ImportError: cannot import name MySQLConnector on the server page.

@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Friends</title>
+</head>
+<body>
+	<h1>My friend {{ one_friend['first_name'] }} </h1>
+  <p>ID: {{ one_friend['id'] }}</p>
+  <p>First Name: {{ one_friend['first_name'] }}</p>
+  <p>Last Name: {{ one_friend['last_name'] }}</p>
+  <p>Occupation: {{ one_friend['occupation'] }}</p>
+  <a href="/update_friend/{{ one_friend['id'] }}">update</a>
+  <hr>
+  <a href="/">index</a>
+
+</body>
+</html>

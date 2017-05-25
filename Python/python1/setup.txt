@@ -1,0 +1,29 @@
+1. after pip install Django was entered, it downloaded a copy of Django and it said
+Successfully installed Django-1.10.6.
+
+2. pip list was used which shows the list of pip installs. The following are the pip installs on my mac.
+click (6.7)
+Django (1.10.6)
+Flask (0.12)
+itsdangerous (0.24)
+Jinja2 (2.9.5)
+MarkupSafe (0.23)
+pip (9.0.1)
+requests (2.13.0)
+setuptools (18.2)
+virtualenv (15.1.0)
+Werkzeug (0.11.15).
+
+3. pip install Django was retyped and it stated that this request was already satisfied
+Requirement already satisfied: Django in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages
+
+4. pip freeze gave a list of the installed packages just like pip list however, on further research,
+(stackoverflow..) it stated that pip freeze outputs installed packages it its requirement format and pip list
+lists all the installed packages including editable.
+
+5. pip uninstall Django was then undertaken where the bash listed all the Django files that would be deleted and a y/n
+to confirm if you really wanted to delete Django.
+
+6. pip show Django was then tried of which there was no response.
+
+7. pip search Flask was the last command executed of which it listed all the features associated with Flask.

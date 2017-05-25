@@ -1,15 +1,107 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<script type="text/javascript">
-			"use strict";
-
-				
-		</script>
-	</head>
-	<body>
-
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#button_hide").click(function(){
+            $("#houdini").hide();
+        });
+        $("#button_show").click(function(){
+            $("#houdini").show();
+        });
+        $("#toggle").click(function(){
+          $("#redblue").toggle();
+        });
+        $("#panel").click(function(){
+          $("#hidden").slideDown('slow');
+        });
+        $("#slideup").click(function(){
+          $("#hidden").slideUp('fast');
+        });
+        $("#slidetoggle").click(function(){
+          $("#sun").slideToggle('slow');
+        });
+        $("#fadein").click(function(){
+          $("#box1").fadeIn('slow');
+          $("#box2").fadeIn('slow');
+          $("#box3").fadeIn('slow');
+        });
+        $("#fadeout").click(function(){
+          $("#box3").fadeOut('slow');
+          $("#box2").fadeOut('slow');
+          $("#box1").fadeOut('slow');
+        });
+        $("#addborder").click(function(){
+          $(".fade").addClass("rounded");
+        });
+        $("#shakespeare").click(function(){
+          $("#hamlet").before("To be or not ");
+        });
+        $("#hamlet").click(function(){
+          $("#hamlet").after("that is the question");
+        });
+        $("#appendbutton").click(function() {
+          $("#hamlet").append("-Hamlet");
+        });
+        $("#htmldemo").click(function () {
+          $("#htmldemo").html(function () {
+            return "This is some more text.";
+          });
+        });
+        $("#textboxbutton").click(function () {
+          $("input:text").val("Some text");
+        });
+        $("#changetitles").click(function(){
+          $("h2").text("This is a title");
+        });
+          // $("#changecolors").click(function() {
+          //   $("h2").attr("background-color", "red");
+          // });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Show / Hide and Text -->
+    <h2 id="houdini">The Amazing Disappearing Reappearing Heading</h2>
+    <button type="button" id="button_hide">Click me to hide the heading.</button>
+    <button type="button" id="button_show">Click me to show the heading.</button>
+    <button type="button" id="changetitles">Change the titles</button>
+<!-- Toggle -->
+    <div id="redblue"></div>
+    <button type="button" id="toggle">Click to show / hide the box.</button>
+<!-- Slide up and down -->
+    <div id="panel">
+      <h2>Schroedinger's Panel</h2>
+      <p>Click to slide down panel.</p>
+    </div>
+    <div id="slideup">Click to slide up panel</div>
+      <img src="http://clipartwork.com/wp-content/uploads/2017/02/free-black-cat.jpeg" alt="Secret Image" id="hidden">
+    <!-- Slide Toggle -->
+    <div id="slidetoggle">Click to slide up or down</div>
+    <img src="http://images.clipartpanda.com/sun-clip-art-sun-medium.png" alt="Sun" id="sun">
+    <!-- Fade In / Out, Add Class-->
+    <div id="buttonholder">
+      <button id="changecolors">Click for drab boxes</button>
+      <button id="fadein">Click to Fade In</button>
+      <button id="fadeout">Click to Fade Out</button>
+      <button id="addborder">Click for fancy boxes</button>
+    </div>
+    <div class="fade" id="box1"></div>
+    <div class="fade" id="box2"></div>
+    <div class="fade" id="box3"></div>
+    <!-- Before, After and Append -->
+    <div id="shakespeare">
+      <h1 id="hamlet">to be...</h1>
+    </div>
+    <button id="appendbutton">Click for more</button>
+    <p id="htmldemo">Here is some text.</p>
+    <!-- Val -->
+    <label for="text">Put some text here</label>
+    <input type="text" name="text" value="">
+    <button id="textboxbutton">Click to enter some text</button>
+  </body>
 </html>

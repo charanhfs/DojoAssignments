@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery Functions</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.b1click').click(function() {
+				 $('p .b1click').css("color", '#' + Math.floor(Math.random()*16777215).toString(16));
+			  });
+			  $('#b2').click(function() {
+			  	$('#hidep').hide('slow');
+			  });
+				$('#b3').click(function() {
+			  	$('#hidep').show('slow', function() {
+			  	$(this).css('font-size','40px' );
+			  	});
+			  });
+				$('#b4').click(function() {
+					$(this).css('background-color','grey');
+					$('.b4').toggle();
+				});
+
+			});
+		</script>
+	</head>
+	<body>
+		<h1 class="b1click"> LOOK Random Colors!</h1>
+		<p class="b1click"><span class="b1click">Bruh</span> Hello</p>
+		<input class="b1click" type="button" name="click" value="Click me!"> <br>
+		<p id="hidep" >We're gonna hide :)</p>
+		<input id="b2" type="button" name="hide" value="Hide!!!">
+		<input id="b3" type="button" name="show" value="Show;changefont..!.!.!">
+		<p class="b4">This is for the toggle button!</p>
+		<input id="b4" type="button" name="toggle" value="Toggle">
+</html>
