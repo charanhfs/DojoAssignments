@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My GitHub</title>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script>
+		  $(document).ready(function(){
+				$('button').click(function() {
+					$.get("https://api.github.com/users/charanhfs", displayName)
+					function displayName(data) {
+						if(data){
+							console.log(data.name);
+							alert("It is me: " + data.name);
+							$( "body" ).prepend( "<p> My name: "+ data.name + ", Location: "+data.location +"</p>" );
+					  }
+						else{
+							alert("error bro");
+						}
+			    }
+				})})
+		</script>
+	</head>
+	<body>
+		<button>Click me!</button>
+
+	</body>
+</html>

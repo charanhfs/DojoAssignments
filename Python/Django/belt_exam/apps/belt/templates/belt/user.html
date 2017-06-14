@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Reviews</title>
+    {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'logreg/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'belt/css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <p class="navbar-text navbar-right"><a href="{% url 'belt:books' %}" class="navbar-link">Home</a></p>
+        <p class="navbar-text navbar-right"><a href="{% url 'belt:addbook' %}" class="navbar-link">Add Book and Review</a></p>
+        <p class="navbar-text navbar-right"><a href="{% url 'logreg:logout' %}" class="navbar-link">Log Out</a></p>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-1">
+        <h3>User Alias: {{user.first_name}}</h3>
+        <h4>Name: {{user.first_name}} {{user.last_name}}</h4>
+        <h4>Email: {{user.email}}</h4>
+        <h4>Total Reviews: {{user.review_user.count}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-1">
+        <h3>Posted Reviews on the Following Books:</h3>
+        <ul>
+          {% for review in user.review_user.all %}
+          <li class="user-review-list"><a href="{% url 'belt:book' review.book_id.id %}">{{review.book_id.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

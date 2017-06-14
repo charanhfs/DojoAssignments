@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add a book</title>
+    {% load staticfiles %}
+<link rel="stylesheet" href="{% static 'logreg/css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'belt/css/style.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <p class="navbar-text navbar-right"><a href="{% url 'belt:books' %}" class="navbar-link">Home</a></p>
+        <p class="navbar-text navbar-right"><a href="{% url 'logreg:logout' %}" class="navbar-link">Log Out</a></p>
+      </div>
+    </nav>
+      {% if messages %}
+      {% for message in messages %}
+      {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+      <div class="row error">
+        <div class="col-md-6 col-md-offset-1">
+          <h4>{{message}}</h4>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    <div class="row">
+      <div class="col-md-6 col-md-offset-1">
+        <h3>Add a New Book Title and a Review:</h3>
+        <form action="{% url 'belt:newbook' %}" method="post">
+          {% csrf_token %}
+            <div class="form-group">
+              <label for="title">Book Title:</label>
+              <input type="text" name="title" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="author_select">Author:</label>
+              <p>Choose from the list:</p>
+              <select name="author_select" class="form-control">
+                <option value="select">Select</option>
+                {% for author in authors %}
+                <option value="{{author.name}}">{{author.name}}
+                {% endfor %}
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p>Or add a new author:</p>
+              <input type="text" name="author_name_input" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="review">Review:</label>
+              <textarea name="review" rows="4" cols="50" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="stars">Rating:</label>
+              <input type="number" name="stars" min="1" max="5"><span> stars.</span>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Book and Review</button>
+        </form>
+      </div>
+    </div>
+  </body>

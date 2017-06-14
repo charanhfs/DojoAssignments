@@ -1,0 +1,23 @@
+body { padding-top: 70px; }
+
+.error {
+  background-color: red;
+  color: white;
+}
+
+.border-top {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.booklist {
+  max-height: 500px;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+
+.user-review-list {
+  list-style: none;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
