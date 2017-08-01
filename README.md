@@ -1,2 +1,2 @@
 # DojoAssignments
-Dojo assignments
+Contents of Coding Dojo Assignments
