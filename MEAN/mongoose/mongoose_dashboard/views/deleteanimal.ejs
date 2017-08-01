@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Delete Animal</title>
+	</head>
+	<body>
+		<h1>Delete Animal</h1>
+		<form action="/animals/destroy/<%= animal.id %>" method="post">
+			<label for="name">Animal's Name:</label>
+			<input type="text" name="name" value="<%= animal.name %>" readonly><br><br>
+			<label for="legs">Number of legs:</label>
+			<input type="number" name="legs" value="<%= animal.legs %>" readonly><br><br>
+			<label for="species">Species:</label>
+			<input type="text" name="species" value="<%= animal.species %>" readonly><br><br>
+			<button>Delete</button>
+		</form>
+		<button><a href="/">All Animals</a></button>
+
+	</body>
+</html>

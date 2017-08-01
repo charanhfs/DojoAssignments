@@ -1,0 +1,9 @@
+<section id="notes-list">
+  <div *ngFor='let note of myNotes' class="form-group">
+    <p id="notedatetime">Noted on: {{ note.createdAt | date:'medium' }}</p>
+    <h3><span>{{ note.note }}</span></h3>
+    <hr>
+  </div>
+</section>
+
+

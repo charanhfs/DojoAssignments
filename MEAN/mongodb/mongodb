@@ -1,0 +1,13 @@
+
+5. db.students.find({})
+6. db.students.find({$or:[{home_state:"San Jose"},{home_state:"Washington"}]}).pretty()
+7.1  db.students.find({lucky_number:{$gt:3}}).pretty()
+7.2 db.students.find({lucky_number:{$lte:10}}).pretty()
+7.3 db.students.find({$and:[{lucky_number:{$gte:1}},{lucky_number:{$lte:9}}]}).pretty()
+8. db.students.update({},{$set:{interests:['coding','bruch','MongoDB']}},false,true)
+9. db.students.update({name:"Tara",{$push:{interests:{$each:['cooking','sewing']}}}})
+10. db.students.update({name:"Vinny"},{$push:{interests:"taxes"}})
+11. db.students.update({name:"Vinny"},{$pull:{interests:"taxes"}})
+12. db.students.remove({$or: [{home_state:"San Jose"}, {home_state:"Washington"}]})
+13. db.students.remove({name:"Vinny"})
+14. db.students.remove({lucky_number: {$gt:5}}, {justOne:true})

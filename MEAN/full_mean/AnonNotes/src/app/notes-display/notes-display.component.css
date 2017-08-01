@@ -1,0 +1,22 @@
+#notes-list{
+    background-color: #FDFEFE;
+    margin-left: 2%;
+    /* margin-right: 2%; */
+    margin-bottom: 2%;
+    width: 75%;
+    border: 1px solid black;
+    color: #909497;
+    height: 270px;
+    overflow: auto;
+}
+.form-group{
+    /* width: 85%; */
+    margin-left: 2%;
+    font-size: 1.5em;
+    font-family: 'Bitter', serif;
+}
+#notedatetime{
+    margin-left: 68%;
+    color: #EC7063;
+    font-size: .7em;
+}

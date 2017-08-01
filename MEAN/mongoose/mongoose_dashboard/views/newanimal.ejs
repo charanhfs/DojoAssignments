@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>New Animal</title>
+	</head>
+	<body>
+		<h1>Add a new Animal to the Animals Dashboard</h1>
+		<% if (typeof errors !== 'undefined') { %>
+	    <% for (const error of errors) { %>
+	      <p class="red alert warning"><%= error %></p>
+	    <% } %>
+  	<%} %>
+		<form action="/animals" method="post">
+			<label for="name">Animal's Name:</label>
+			<input type="text" name="name"><br><br>
+			<label for="legs">Number of legs:</label>
+			<input type="number" name="legs"><br><br>
+			<label for="species">Species:</label>
+			<input type="text" name="species"><br><br>
+			<label for="dangerous">is it Dangerous?</label>
+			<input type="radio" name="dangerous" value="true">Yes
+			<input type="radio" name="dangerous" value="false">No <br><br>
+			<button>Create animal</button>
+		</form>
+	</body>
+</html>

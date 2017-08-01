@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="container">
+    <h1 id="h1top">
+      Anonymous Notes
+    </h1>
+  <div *ngIf='errorMessages.length'>
+    <ul>
+      <li class="alert alert-danger" *ngFor='let error of errorMessages'>
+        {{ error }}
+      </li>
+    </ul>
+  </div>
+  <form (submit)='onSubmit(noteForm)' #noteForm='ngForm' id="enterform" class="form-inline">
+    <div class="form-group">
+      <label for="note">Notes:</label>
+      <textarea class="form-control" [ngModel]='note.note' name="note" cols="70" rows="1" placeholder="Leave an Anonymous note..."></textarea>
+    </div>
+    <button class="btn btn-success">Add Note</button>
+  </form>
+  <app-notes-display [myNotes]= 'notes'></app-notes-display>
+</div>
+
+
+
+
+

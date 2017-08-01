@@ -1,0 +1,21 @@
+#one{
+    /* text-align: center; */
+     margin-left: 100px; 
+}
+h1{
+    color: #FF5733; 
+     font-family: 'Playfair Display', serif;
+}
+#tablehead{
+    color: #C70039;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+}
+#tablebod{
+    color: #61645B;
+     font-family: 'Raleway', sans-serif; 
+    /* font-family: 'Indie Flower', cursive; */
+    font-size: 18px;
+    text-align: center;
+}

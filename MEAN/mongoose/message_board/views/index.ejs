@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Message Board</title>
+	</head>
+	<body>
+		<h1>The Dojo Message Board</h1>
+		<hr>
+		<form action="/message" method="post">
+			<label for="name">Name:</label><br>
+			<input type="text" name="name" value=""><br><br>
+			<label for="text">Message:</label><br>
+			<textarea name="text" rows="8" cols="80"></textarea><br>
+			<button style="color:blue;margin-left:415px;">Post message</button>
+		</form>
+		<div style="margin-left:10px;">
+			<% for (var message of messages) {%>
+				<h2>Name: <%= message.name %></h2>
+				<h3>Message: <%= message.text %></h3>
+				<h3 style="color:#9B5E58;">Posted at: <%= message.createdAt.toLocaleTimeString()%> (<%= message.createdAt.toLocaleDateString()%>)</h3>
+				<% for (const comment of message.comments) { %>
+          <h4 style="margin-left:20px;color:#ADB783;">Name: <%= comment.name %></h4>
+					<p style="margin-left:20px;color:#ADB783;">Comment: <%= comment.text %></p>
+					<p style="color:#9B5E58;margin-left:20px;">Posted at: <%= comment.createdAt.toLocaleTimeString()%> (<%= comment.createdAt.toLocaleDateString()%>)</p>
+
+        <% } %>
+				<form action="/comments/<%= message.id %>" method="post" style="margin-left:20px;">
+					<label for="name">Name:</label><br>
+					<input type="text" name="name" value=""><br><br>
+					<label for="text">Comment:</label><br>
+					<textarea name="text" rows="6" cols="60"></textarea><br>
+					<button style="color:blue;margin-left:300px;">Post comment</button>
+				</form>
+			<%}%>
+		</div>
+	</body>
+</html>

@@ -48,6 +48,7 @@ var _ = {
    }
  }
 var array1 = [2,3,4,5];
+var array = [2,3,4,5];
 // you just created a library with 5 methods!
 // var mapped = _.map(array1,function multiplyBy3(val){return val * 3; });
 // console.log(mapped,"original array is");
@@ -56,7 +57,7 @@ var array1 = [2,3,4,5];
 
 // console.log("I reduced the array to:",_.reduce(array, function callback(x, memo){return x * memo;},2));
 
-// var evens = _.find(array,function(num){return num % 2 != 0;});
-// console.log(evens);
+var evens = _.find(array,function(num){return num % 2 != 0;});
+console.log(evens);
 
-console.log(_.reject([1,2,3,4,5,6,7],function(number){return number % 2 == 0;}));
+// console.log(_.reject([1,2,3,4,5,6,7],function(number){return number % 2 == 0;}));

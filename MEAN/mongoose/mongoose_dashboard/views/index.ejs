@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Animals</title>
+	</head>
+	<body>
+		<h1>Welcome to the Animals Dashboard!</h1>
+		<% for (var animal of animals) { %>
+			<h2><a href="/animals/<%= animal.id %>"><%= animal.name %></a></h2>
+			<p>Number of legs: <%= animal.legs %> </p>
+			<p>Species: <%= animal.species %> </p>
+			<p>Is it dangerous: <%= animal.dangerous %> </p>
+			<a href="/animals/edit/<%= animal.id %>">edit</a>
+			<a href="/animals/delete/<%= animal.id %>">delete</a>
+			<hr>
+	  <% } %>
+		<button><a href="/animals/new">Create an Animal</a></button>
+	</body>
+</html>

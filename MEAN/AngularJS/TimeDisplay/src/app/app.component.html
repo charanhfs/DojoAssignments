@@ -1,0 +1,12 @@
+<div id="container">
+  <h1>US Timezone Display</h1>
+ <section>
+  <button (click)="getDateByZone('PST')" [ngClass]="{selected: lastTimeZoneSelected === 'PST'}">PST</button>
+  <button (click)="getDateByZone('MST')" [ngClass]="{selected: lastTimeZoneSelected === 'MST'}">MST</button>
+  <button (click)="getDateByZone('CST')" [ngClass]="{selected: lastTimeZoneSelected === 'CST'}">CST</button>
+  <button (click)="getDateByZone('EST')" [ngClass]="{selected: lastTimeZoneSelected === 'EST'}">EST</button>
+  <button (click)="getDateByZone()">Clear</button>
+</section>
+  <h1>{{time | date:'medium'}}</h1> 
+</div>
+

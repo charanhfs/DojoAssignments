@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quoting Dojo</title>
+	</head>
+	<body>
+		<h1>Here are the awesome quotes!</h1>
+		<a href="/">Home</a>
+		<% for (var i in quotes) { %>
+			<p>"<%= quotes[i].quote %>"</p>
+			<h4><%= quotes[i].name %> at
+				<%= quotes[i].createdAt.toLocaleTimeString("en-US") %>,
+				<%= quotes[i].createdAt.toLocaleDateString("en-US") %></h4>
+			<hr>
+	  <% } %>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "socket_test",
+  "version": "1.0.0",
+  "description": "first socket test",
+  "main": "server.js",
+  "scripts": {
+    "test": "testing test",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "socket",
+    "express"
+  ],
+  "author": "Charan",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3"
+  }
+}
