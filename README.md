@@ -1,2 +1,3 @@
-# DojoAssignments
-Dojo assignments
+# Coding Dojo 
+Online Assignments
+
