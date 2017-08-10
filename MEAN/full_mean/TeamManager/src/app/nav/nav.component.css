@@ -1,0 +1,15 @@
+.navbar-header{
+    
+}
+
+#bs-example-navbar-collapse-1 {
+    font-size: 1.2em;   
+}
+
+ul.nav.navbar-nav li a{
+   color: #3286C5 !important; 
+}
+
+ul.nav.navbar-nav li:first-child {
+ border-right: 1px solid #3286C5;
+}

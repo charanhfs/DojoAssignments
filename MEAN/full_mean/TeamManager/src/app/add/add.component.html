@@ -1,0 +1,27 @@
+<div class="container">
+    <p class="playersnav">
+        <a routerLink="/players/list">List</a>
+        <span> | </span>
+        <a routerLink="/players/addplayer">Add Player</a>
+    </p>
+    <div id="content">
+        <h3>Add Player</h3>
+        <form id="playerform" class="form-horizontal">
+            <div class="form-group">
+                <label for="name" class="col-sm-4 control-label">Player's Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="name" class="form-control"> 
+                </div> 
+            </div>
+            <div class="form-group">
+                 <label for="position" class="col-sm-4 control-label">Preferred Position:</label> 
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="position" class="form-control"> 
+                </div> 
+            </div>
+            <div class="form-group">
+                <button> ADD </button>
+            </div>
+        </form>
+    </div>
+</div>
