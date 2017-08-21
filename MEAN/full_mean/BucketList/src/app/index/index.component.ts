@@ -23,6 +23,7 @@ export class IndexComponent{
     this.auth.login(user)
       .then((user) => this.router.navigate(['dashboard']))
       .catch(response => this.handleErrors(response.json()))
+
   }
 
   private handleErrors(errors: string[] | Error) {

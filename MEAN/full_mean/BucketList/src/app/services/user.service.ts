@@ -14,7 +14,7 @@ export class UserService {
   login(user: User): Promise<User> {
     return this.http.post('/api/auth/login', user)
       .map(response => response.json())
-      .toPromise();
+      .toPromise();   
   }
 
   logout(): Promise<User> {
@@ -22,10 +22,14 @@ export class UserService {
       .map(data => data.json())
       .toPromise();    
   }
-  getUser(id: string): Promise<User> {
-    console.log('getting by id', id);
-    return this.http.get(`/api/auth/${ id }`)
-      .map(data => data.json())
+
+  getUsername(): string {
+  return this.cookieService.get('username');
+  }
+
+  getUsers(): Promise<User[]> {
+    return this.http.get('/api/auth/users')
+      .map(response => response.json())
       .toPromise();
   }
 }

@@ -1,13 +1,13 @@
 <app-nav></app-nav>
+
 <div class="container">
-    <h2>Welcome {{usersession}}</h2>
-    <form class="form-inline">
-        <input type="text" name="title" placeholder="Title" class="form-control">
+    <h2>Welcome {{username()}}</h2>
+    <form class="form-inline" (submit)='onSubmit(newList)' #newList='ngForm'>
+        <input type="text" name="title"  placeholder="Title" class="form-control">
         <textarea rows="1" cols="90" class="form-control" placeholder="description"></textarea>
-        <select class="form-control">
-            <option value="1">112543</option>
-            <option value="2">2</option>
-        </select>
+        <select class= "form-control" name="users" >
+         <option value="user._id" ></option>
+       </select>
         <button class="btn btn-default"> Add to List </button>
     </form>
     <br>
